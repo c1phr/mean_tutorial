@@ -1,0 +1,34 @@
+[
+    "index.md",
+    "why.md",
+    "setup.md",
+    [
+        "setup2.md",
+        "mongowindows.md",
+        "mongoosx.md",
+        "mongonix.md",
+        "mongonix2.md"
+    ],
+    "npm.md",
+    "npminstall.md",
+    "npminstall2.md",
+    "anatomy.md",
+    "dbschema1.md",
+    "dbschema2.md",
+    "dbschema3.md",
+    "dbschema4.md",
+    [
+        "rest1.md",
+        "rest1.2.md",
+        "rest1.3.md",
+        "rest1.4.md"
+    ],
+    "rest2.md",
+    "rest3.md",
+    "rest4.md",
+    [
+        "userapi1.md",
+        "userapi2.md",
+        "userapi3.md"
+    ]    
+]
