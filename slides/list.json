@@ -1,6 +1,10 @@
 [
     "index.md",
     "why.md",
+    "aboutmongo.md",
+    "aboutexpress.md",
+    "aboutangular.md",
+    "aboutnode.md",
     "setup.md",
     [
         "setup2.md",
