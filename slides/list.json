@@ -1,6 +1,10 @@
 [
     "index.md",
     "why.md",
+    "aboutmongo.md",
+    "aboutexpress.md",
+    "aboutangular.md",
+    "aboutnode.md",
     "setup.md",
     [
         "setup2.md",
@@ -30,5 +34,36 @@
         "userapi1.md",
         "userapi2.md",
         "userapi3.md"
-    ]    
+    ],
+    "angular1.md",
+    "angular2.md",
+    "angular3.md",
+    "angular4.md",
+    [
+        "angular5.md",
+        "angular5.2.md",
+        "angular5.3.md",
+        "angular5.4.md"
+    ],
+    [
+        "angular6.md",
+        "angular6.2.md",
+        "angular6.3.md"
+    ],
+    [
+        "angular7.md",
+        "angular7.2.md",
+        "angular7.3.md",
+        "angular7.4.md"
+    ],
+    "angular8.md",
+    "tasks.md",
+    "tasks2.md",
+    "tasks3.md",
+    "tasks4.md",
+    "tasks5.md",
+    "whatsnext.md",
+    "stayaway.md",
+    "stayaway2.md",
+    "end.md"
 ]

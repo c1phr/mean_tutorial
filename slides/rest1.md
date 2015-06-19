@@ -15,9 +15,9 @@ Then we'll add our first GET request:
 
 <pre><code data-trim>
 router.get('/tasks', function(req, res, next) {
-  Task.find(function(err, tasks){
+  Task.find({}).populate('creator').exec(function(err, tasks) {
     if (err) { return next(err); }
-	res.json(tasks);
+    res.json(tasks);
   });
 });
 </pre></code>
