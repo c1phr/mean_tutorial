@@ -13,6 +13,34 @@
 		  	</div>
 	  	</div>
 	  <script type="text/ng-template" id="/home.html">
+	  <table class="table">	  		
+		  	<tr>
+			  	<th>Title</th>
+			  	<th>Description</th>			  				  	
+			  	<th>Creator</th>
+			<tr ng-repeat="task in tasks">
+				<td>{{task.title}}</td>
+				<td>{{task.description}}</td>
+				<td>{{task.creator.name}}</td>
+			</tr>			
+		</table>
+		<form ng-submit="addTask()">
+			<h4>Add a new task</h4>
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Title" ng-model="title"></input>
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Description" ng-model="description"></input>
+			</div>
+			<div class="form-group">
+				<select ng-model="creator">
+					<option value="" disabled selected>Please select a user</option>
+					<option ng-repeat="user in users" value={{user._id}}>{{user.name}}</option>
+				</select>
+			</div>
+			<button class="btn btn-primary" type="submit">Submit</button>
+		</form>
+		
 	  	<table class="table">	  		
 		  	<tr>
 			  	<th>Name</th>
@@ -31,7 +59,7 @@
 				<input type="text" class="form-control" placeholder="Email" ng-model="email"></input>
 			</div>
 			<button class="btn btn-primary" type="submit">Submit</button>
-		<form>
+		</form>
   	</script>
   	</body>
 </html>

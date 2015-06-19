@@ -13,6 +13,9 @@ app.config([
 				resolve: {
 					getUsers: ['users', function(users) {
 						return users.getAll();
+					}],
+					getTasks: ['tasks', function(tasks) {
+						return tasks.getAll();
 					}]
 				}				
 			});
@@ -29,6 +32,12 @@ app.factory('tasks', ['$http', function($http) {
 			angular.copy(data, t.tasks);
 		});
 	};
+	t.create = function(task) {
+		return $http.post('/tasks', task).success(function(data) {
+			t.tasks.push(data);
+		});
+	};
+	return t;
 }]);
 
 app.factory('users', ['$http', function($http) {
@@ -51,8 +60,23 @@ app.factory('users', ['$http', function($http) {
 app.controller('HomeCtrl', [
 	'$scope',
 	'users',
-	function($scope, users) {
+	'tasks',
+	function($scope, users, tasks) {
 		$scope.users = users.users;
+		$scope.tasks = tasks.tasks;
+		$scope.addTask = function() {
+			if (!$scope.title || $scope.title === '' || 
+				!$scope.description || $scope.description === '' ||
+				!$scope.creator || $scope.creator === '') { return ; }
+			tasks.create({
+				title: $scope.title,
+				description: $scope.description,				
+				creator: $scope.creator
+			});
+			$scope.title = '';
+			$scope.description = '';			
+			$scope.creator = '';
+		};
 		$scope.addUser = function() {
 			if (!$scope.name || $scope.name === '' ||
 				!$scope.email || $scope.email === '') { return ;}
