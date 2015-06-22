@@ -9,3 +9,5 @@ Now that we have Node and Mongo setup, we can start working on setting up the ac
 2. Run: ` express --ejs todo && cd todo `
     - The first command will run the newly installed generator and setup the boilder plate.
     - ` --ejs ` is an argument that specifies that we're going to use standard HTML templates instead of Express' default Jade templates
+>
+If running npm on windows causes "command not found", check that it was added to your PATH environment variable
