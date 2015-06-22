@@ -4,7 +4,7 @@
 2. Open a command prompt and create the default data directory for MongoDB:    
   ``` md \data\db ```
 3. To start MongoDB, run:  
-  ``` C:\mongodb\bin\mongo.exe ```
+  ``` "C:\Program Files\MongoDB\Server\3.0\bin\mongod.exe" ```
 4. Leave this command prompt window open to keep MongoDB running. Use ctrl + C to exit.
 
 MongoDB is now ready to go, use the link below to read the
