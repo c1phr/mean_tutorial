@@ -16,5 +16,4 @@ var TaskSchema = new mongoose.Schema({
 mongoose.model('Task', TaskSchema);
 </pre></code>
 
-The above code creates a data model for our task object. The `hoursSpent` field shows how to create data constraints 
-while the `creator` field shows to reference another object (similar to a relationship in a SQL database).
+The above code creates a data model for our task object. The `creator` field shows how to reference another object (similar to a relationship in a SQL database).
