@@ -8,5 +8,5 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/todo');
 </code></pre>
 
-The first line will Mongoose package (similar to `using` in .NET), and the second line instructs Mongoose to connect to 
+The first line will reference the Mongoose package (similar to `using` in .NET), and the second line instructs Mongoose to connect to 
 the "todo" database in our local MongoDB instance.
