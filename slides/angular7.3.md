@@ -7,6 +7,7 @@ You may need to scroll in the code box to see the longer lines.
 	<tr>
 	  	<th>Name</th>
 	  	<th>Email</th>
+	</tr>
 	<tr ng-repeat="user in users">
 		<td>{{user.name}}</td>
 		<td>{{user.email}}</td>

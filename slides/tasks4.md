@@ -5,6 +5,7 @@
 		  	<th>Title</th>
 		  	<th>Description</th>			  				  	
 		  	<th>Creator</th>
+		</tr>
 		<tr ng-repeat="task in tasks">
 			<td>{{task.title}}</td>
 			<td>{{task.description}}</td>
